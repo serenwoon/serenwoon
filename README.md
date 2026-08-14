@@ -6,7 +6,7 @@
 
 [extraction-benchmark](https://github.com/serenwoon/extraction-benchmark)에서는 같은 작업을 사람과 파이프라인으로 나눠 쟀습니다. 건당 60초가 8.6초가 됐습니다. 그런데 본문을 뒤집는 단서는 양쪽 다 놓쳤어요. 사람이 0/4, LLM이 0~1/4, 기계 스캔만 4/4였습니다.
 
-[requirement-guard](https://github.com/serenwoon/requirement-guard)는 제안서 원고를 규격 문서 원본과 대조합니다. 재활용한 문장에 앞 사업의 요구사항 ID와 이름이 딸려 오는 걸 잡으려고 만들었어요. 정작 만들고 보니 ID가 아예 없는 경우는 0건이더군요. 사고는 ID가 멀쩡하고 이름만 다른 쪽이었습니다.
+[requirement-guard](https://github.com/serenwoon/requirement-guard)는 장문 원고를 규격 문서 원본과 대조합니다. 재활용한 문장에 앞 건의 요구사항 ID와 이름이 딸려 오는 걸 잡으려고 만들었어요. 정작 만들고 보니 ID가 아예 없는 경우는 0건이더군요. 사고는 ID가 멀쩡하고 이름만 다른 쪽이었습니다.
 
 공백 뒤를 전부 이름으로 보면 후보 84건에 진짜는 2건, 정밀도 2%짜리가 나옵니다. 신호를 둘로 좁혀 243건 중 2건, 오탐 0으로 만들었습니다.
 

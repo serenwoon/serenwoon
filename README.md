@@ -2,6 +2,8 @@
 
 저장소 일곱이 결국 같은 얘기를 합니다. 결과를 내기 전에, 그 결과가 맞는지 잴 방법을 먼저 만든다.
 
+일곱 다 파이썬이고, `ledger-reconcile`에만 자바 판이 하나 더 있습니다.
+
 [agent-workflow](https://github.com/serenwoon/agent-workflow)는 문서 작업을 에이전트로 돌리는 판정 루프입니다. 규칙이 여덟 개 있는데 미리 설계한 건 하나도 없어요. 전부 뭔가를 틀린 다음에 생겼습니다. 그중 다섯은 같은 실패였고요. 도구가 준 결과를 원본과 안 맞춰보고 그냥 받은 것.
 
 [extraction-benchmark](https://github.com/serenwoon/extraction-benchmark)에서는 같은 작업을 사람과 파이프라인으로 나눠 쟀습니다. 건당 60초가 8.6초가 됐습니다. 그런데 본문을 뒤집는 단서는 양쪽 다 놓쳤어요. 사람이 0/4, LLM이 0~1/4, 기계 스캔만 4/4였습니다.

@@ -9,7 +9,7 @@
 
 <sub>Six of the last eight died in the measurement, before a line of code.<br>One of them when a single grep showed 299 of 300 cases were already covered.</sub>
 
-만들기 전에 잴 방법을 먼저 만듭니다. 그 방법이 프로젝트를 죽이면 죽게 둡니다.
+
 
 <br>
 
@@ -131,19 +131,4 @@ flowchart LR
 
 반대로 간 자리도 있습니다. 목업의 드롭존은 다섯 형식을 약속하는데, 코드는 그 약속을 되풀이하지 않고 허용 목록에서 문구를 만들어 "PDF · HWP・HWPX・JPG・PNG는 준비 중"을 띄웁니다.
 
----
 
-<div align="center">
-
-### 시험이 지키는 것과 지켜야 하는 것은 다른 문제입니다
-
-<sub>한 규칙을 네 번 고치는 동안 시험은 매번 초록불이었고,<br>마지막에 전체 검토를 돌리니 그 규칙 자체가 틀렸다고 나왔습니다.</sub>
-
-<br>
-
-[![repos](https://img.shields.io/badge/공개_저장소-9-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/serenwoon?tab=repositories)
-[![stars](https://img.shields.io/github/stars/serenwoon?style=flat-square&logo=github&label=stars&color=181717)](https://github.com/serenwoon?tab=repositories)
-[![last](https://img.shields.io/github/last-commit/serenwoon/ledger-reconcile?style=flat-square&label=%EC%B5%9C%EA%B7%BC%20%EC%BB%A4%EB%B0%8B&color=555555)](https://github.com/serenwoon/ledger-reconcile)
-[![mail](https://img.shields.io/badge/wjddns5161@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:wjddns5161@gmail.com)
-
-</div>

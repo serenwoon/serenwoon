@@ -9,7 +9,7 @@
 
 <sub>Six of the last eight died in the measurement, before a line of code.<br>One of them when a single grep showed 299 of 300 cases were already covered.</sub>
 
-만들기 전에 잴 방법을 먼저 만듭니다. 그 방법이 프로젝트를 죽이면 죽게 둡니다.
+
 
 <br>
 

@@ -2,11 +2,14 @@
 
 # serenwoon
 
+**Planning & AI engineering** — I build agent harnesses for document-heavy work
+(proposals, public bids, RFPs) and measure whether they actually hold.
+
 ### I kill more projects than I ship.
 
 <sub>Six of the last eight died in the measurement, before a line of code.<br>One of them when a single grep showed 299 of 300 cases were already covered.</sub>
 
-**만들기 전에 잴 방법을 먼저 만듭니다. 그 방법이 프로젝트를 죽이면 죽게 둡니다.**
+만들기 전에 잴 방법을 먼저 만듭니다. 그 방법이 프로젝트를 죽이면 죽게 둡니다.
 
 <br>
 
@@ -58,11 +61,11 @@ flowchart LR
 
 | | 무엇 | 재보니 |
 |---|---|---|
-| **[ledger-reconcile](https://github.com/serenwoon/ledger-reconcile)** | 원장 이관이 맞는지 재는 하네스 | 결함 11종 중 **7종이 집계 대조를 그냥 통과** |
-| **[edit-receipt](https://github.com/serenwoon/edit-receipt)** | 일괄 편집에 영수증을 붙인다 | 만든 날 **자기 README 고치다 자기한테 걸림** |
-| **[spaced-quiz](https://github.com/serenwoon/spaced-quiz)** | 노트 문항을 간격 반복으로 | 문항 수가 세는 법마다 **723 / 781 / 722 / 686** |
-| **[wikilink-audit](https://github.com/serenwoon/wikilink-audit)** | 볼트의 깨진 링크 | 정밀도 **0.19 → 1.00 → 0.980** |
-| **[extraction-benchmark](https://github.com/serenwoon/extraction-benchmark)** | 사람 대 파이프라인 | 60초 → 8.6초, **단서는 양쪽 다 놓침** |
+| [ledger-reconcile](https://github.com/serenwoon/ledger-reconcile) | 원장 이관이 맞는지 재는 하네스 | 결함 11종 중 **7종이 집계 대조를 그냥 통과** |
+| [edit-receipt](https://github.com/serenwoon/edit-receipt) | 일괄 편집에 영수증을 붙인다 | 만든 날 **자기 README 고치다 자기한테 걸림** |
+| [spaced-quiz](https://github.com/serenwoon/spaced-quiz) | 노트 문항을 간격 반복으로 | 문항 수가 세는 법마다 **723 / 781 / 722 / 686** |
+| [wikilink-audit](https://github.com/serenwoon/wikilink-audit) | 볼트의 깨진 링크 | 정밀도 **0.19 → 1.00 → 0.980** |
+| [extraction-benchmark](https://github.com/serenwoon/extraction-benchmark) | 사람 대 파이프라인 | 60초 → 8.6초, **단서는 양쪽 다 놓침** |
 
 <sub>👉 전부 실패를 지우지 않고 README에 남겨뒀습니다. 숫자가 나빠진 것도요.</sub>
 
@@ -72,7 +75,27 @@ flowchart LR
 
 [**Team soft icecream**](https://github.com/Yonghyun-Lee-Ryan/JunctionX-Korea-Soft-Icecream) · Upstage 트랙 · 기획과 AI 파이프라인 담당 (팀 80커밋 중 48)
 
-나라장터 공고를 읽어 **입찰 가능한 것만 추리고**, 요구사항 체크리스트 · WBS · 임계경로 · 제출물 목록까지 냅니다.
+나라장터 공고를 읽어 입찰 가능한 것만 추리고, 요구사항 체크리스트 · WBS · 임계경로 · 제출물 목록까지 냅니다.
+
+![Upstage](https://img.shields.io/badge/Upstage_Studio-5A31F4?style=flat-square&logoColor=white)
+![Solar](https://img.shields.io/badge/Solar_Pro-5A31F4?style=flat-square&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Node](https://img.shields.io/badge/Express-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![tests](https://img.shields.io/badge/tests-158%20%2B%20104-2ea44f?style=flat-square)
+
+```mermaid
+flowchart LR
+    N["📢 나라장터<br/>2주에 공고 5,000건"] --> S
+    C["🏢 회사 서류<br/>등록증 · 실적"] --> S
+    S["<b>Upstage Studio</b><br/>Parse → Classify → Extract<br/>HWP 77쪽 그대로"] --> J
+    J["<b>Solar Pro</b><br/>자격 · 계획 · 제출 판정"] --> G
+    G{"백엔드가<br/>다시 센다"} -->|"불일치"| G2["🚩 미확인으로 표시<br/>0으로 안 채운다"]
+    G -->|"일치"| K["📋 Bid Kit<br/>요구사항 · WBS<br/>임계경로 · 제출물"]
+    G2 --> K
+```
+
+한 건에 Studio 잡 6회 · Solar 6회. 콜드런 10분 22초, 캐시 4분 11초입니다.
 
 > 입찰은 서류 한 장이 빠지면 그 자리에서 실격이라 **"아마 맞을 겁니다"는 값이 0**입니다.
 > 그래서 화면의 모든 숫자가 출처 문서와 쪽수를 달고 다니고, 못 읽은 칸은 0으로 채우지 않습니다.

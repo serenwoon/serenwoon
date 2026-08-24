@@ -88,8 +88,8 @@ flowchart LR
 flowchart LR
     N["📢 나라장터<br/>2주에 공고 5,000건"] --> S
     C["🏢 회사 서류<br/>등록증 · 실적"] --> S
-    S["<b>Upstage Studio</b><br/>Parse → Classify → Extract<br/>HWP 77쪽 그대로"] --> J
-    J["<b>Solar Pro</b><br/>자격 · 계획 · 제출 판정"] --> G
+    S["Upstage Studio<br/>Parse → Classify → Extract<br/>HWP 77쪽 그대로"] --> J
+    J["Solar Pro<br/>자격 · 계획 · 제출 판정"] --> G
     G{"백엔드가<br/>다시 센다"} -->|"불일치"| G2["🚩 미확인으로 표시<br/>0으로 안 채운다"]
     G -->|"일치"| K["📋 Bid Kit<br/>요구사항 · WBS<br/>임계경로 · 제출물"]
     G2 --> K

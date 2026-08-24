@@ -4,7 +4,7 @@
 
 ### I kill more projects than I ship.
 
-<sub>One died when a single grep showed 299 of 300 cases were already covered.<br>No code was written. That counts as a result.</sub>
+<sub>Six of the last eight died in the measurement, before a line of code.<br>One of them when a single grep showed 299 of 300 cases were already covered.</sub>
 
 **만들기 전에 잴 방법을 먼저 만듭니다. 그 방법이 프로젝트를 죽이면 죽게 둡니다.**
 
@@ -50,7 +50,7 @@ flowchart LR
     C --> A
 ```
 
-파이프라인 실행 기록 여섯 개 중 **코드가 나온 건 하나**입니다. 나머지는 판단 게이트에서 멈췄거나 죽었습니다.
+실전 여덟 건에 배포 하나. **여섯 건은 코드를 한 줄도 안 썼고 다섯은 판단 게이트에서 죽었습니다.**
 
 ---
 

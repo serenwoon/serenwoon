@@ -2,9 +2,11 @@
 
 # serenwoon
 
-### 재고 나서 씁니다
+### I kill more projects than I ship.
 
-**만들기 전에 잴 방법을 먼저 만듭니다. 재보고 접은 쪽이 더 많습니다.**
+<sub>One died when a single grep showed 299 of 300 cases were already covered.<br>No code was written. That counts as a result.</sub>
+
+**만들기 전에 잴 방법을 먼저 만듭니다. 그 방법이 프로젝트를 죽이면 죽게 둡니다.**
 
 <br>
 
@@ -48,7 +50,7 @@ flowchart LR
     C --> A
 ```
 
-실전 6회에 배포 1 · 접힘 5. **그중 4건은 코드를 한 줄도 안 썼습니다.**
+파이프라인 실행 기록 여섯 개 중 **코드가 나온 건 하나**입니다. 나머지는 판단 게이트에서 멈췄거나 죽었습니다.
 
 ---
 

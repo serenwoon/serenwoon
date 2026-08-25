@@ -59,8 +59,8 @@ flowchart LR
 
 <div align="center">
 
-<img src="https://serenwoon-stats.vercel.app/api?username=serenwoon&show_icons=true&hide=stars&count_private=true&hide_border=true&bg_color=00000000&title_color=D97757&text_color=8b949e&icon_color=D97757&theme=dark" height="165" alt="serenwoon GitHub 통계">
-<img src="https://serenwoon-stats.vercel.app/api/top-langs/?username=serenwoon&layout=compact&langs_count=6&count_private=true&hide_border=true&bg_color=00000000&title_color=D97757&text_color=8b949e&icon_color=D97757&theme=dark" height="165" alt="많이 쓴 언어">
+<img src="https://github-readme-stats-serenwoon.vercel.app/api?username=serenwoon&show_icons=true&hide=stars&count_private=true&hide_border=true&bg_color=00000000&title_color=D97757&text_color=8b949e&icon_color=D97757&theme=dark" height="165" alt="serenwoon GitHub 통계">
+<img src="https://github-readme-stats-serenwoon.vercel.app/api/top-langs/?username=serenwoon&layout=compact&langs_count=6&count_private=true&hide_border=true&bg_color=00000000&title_color=D97757&text_color=8b949e&icon_color=D97757&theme=dark" height="165" alt="많이 쓴 언어">
 
 <img src="https://streak-stats.demolab.com/?user=serenwoon&hide_border=true&background=00000000&stroke=8b949e&ring=D97757&fire=D97757&currStreakLabel=D97757&sideLabels=8b949e&dates=8b949e&currStreakNum=8b949e&sideNums=8b949e" height="165" alt="연속 커밋 기록">
 

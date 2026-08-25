@@ -1,8 +1,8 @@
 <div align="center">
 
-# serenwoon
+![header](https://capsule-render.vercel.app/api?type=waving&color=0:D97757,100:5A31F4&height=200&section=header&text=serenwoon&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Planning%20%26%20AI%20engineering&descAlignY=56&descSize=18)
 
-**Planning & AI engineering** — I build agent harnesses for document-heavy work
+I build agent harnesses for document-heavy work
 (proposals, public bids, RFPs) and measure whether they actually hold.
 
 ### I kill more projects than I ship.
@@ -56,6 +56,15 @@ flowchart LR
 실전 여덟 건에 배포 하나. **여섯 건은 코드를 한 줄도 안 썼고 다섯은 판단 게이트에서 죽었습니다.**
 
 ---
+
+<div align="center">
+
+<img src="https://serenwoon-stats.vercel.app/api?username=serenwoon&show_icons=true&hide=stars&count_private=true&hide_border=true&bg_color=00000000&title_color=D97757&text_color=8b949e&icon_color=D97757&theme=dark" height="165" alt="serenwoon GitHub 통계">
+<img src="https://serenwoon-stats.vercel.app/api/top-langs/?username=serenwoon&layout=compact&langs_count=6&count_private=true&hide_border=true&bg_color=00000000&title_color=D97757&text_color=8b949e&icon_color=D97757&theme=dark" height="165" alt="많이 쓴 언어">
+
+<img src="https://streak-stats.demolab.com/?user=serenwoon&hide_border=true&background=00000000&stroke=8b949e&ring=D97757&fire=D97757&currStreakLabel=D97757&sideLabels=8b949e&dates=8b949e&currStreakNum=8b949e&sideNums=8b949e" height="165" alt="연속 커밋 기록">
+
+</div>
 
 ## 📦 만든 것
 
@@ -131,4 +140,12 @@ flowchart LR
 
 반대로 간 자리도 있습니다. 목업의 드롭존은 다섯 형식을 약속하는데, 코드는 그 약속을 되풀이하지 않고 허용 목록에서 문구를 만들어 "PDF · HWP・HWPX・JPG・PNG는 준비 중"을 띄웁니다.
 
+---
 
+<div align="center">
+
+<a href="mailto:wjddns5161@gmail.com"><img src="https://img.shields.io/badge/wjddns5161@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="이메일"></a>
+
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:5A31F4,100:D97757&height=120&section=footer)
+
+</div>

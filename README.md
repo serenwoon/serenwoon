@@ -81,6 +81,7 @@ flowchart LR
 | [spaced-quiz](https://github.com/serenwoon/spaced-quiz) | 노트 문항을 간격 반복으로 | 문항 수가 세는 법마다 **723 / 781 / 722 / 686** |
 | [wikilink-audit](https://github.com/serenwoon/wikilink-audit) | 볼트의 깨진 링크 | 정밀도 **0.19 → 1.00 → 0.980** |
 | [extraction-benchmark](https://github.com/serenwoon/extraction-benchmark) | 사람 대 파이프라인 | 60초 → 8.6초, **단서는 양쪽 다 놓침** |
+| [hiring-traps](https://github.com/serenwoon/hiring-traps) | Upstage Studio를 재본 기록 | 노드 **14종 중 4종만 쓰인다** |
 
 <sub>👉 전부 실패를 지우지 않고 README에 남겨뒀습니다. 숫자가 나빠진 것도요.</sub>
 

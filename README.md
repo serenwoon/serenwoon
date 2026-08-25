@@ -1,6 +1,5 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=wave&color=0:D97757,100:5A31F4&height=200&section=header&text=serenwoon&fontSize=70&fontColor=ffffff&fontAlignY=36&desc=Planning%20%26%20AI%20engineering&descAlignY=56&descSize=18)
 
 I build agent harnesses for document-heavy work
 (proposals, public bids, RFPs) and measure whether they actually hold.

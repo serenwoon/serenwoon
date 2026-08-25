@@ -1,6 +1,6 @@
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:D97757,100:5A31F4&height=200&section=header&text=serenwoon&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Planning%20%26%20AI%20engineering&descAlignY=56&descSize=18)
+![header](https://capsule-render.vercel.app/api?type=wave&color=0:D97757,100:5A31F4&height=200&section=header&text=serenwoon&fontSize=70&fontColor=ffffff&fontAlignY=36&desc=Planning%20%26%20AI%20engineering&descAlignY=56&descSize=18)
 
 I build agent harnesses for document-heavy work
 (proposals, public bids, RFPs) and measure whether they actually hold.
@@ -59,12 +59,18 @@ flowchart LR
 
 <div align="center">
 
-<img src="https://github-readme-stats-serenwoon.vercel.app/api?username=serenwoon&show_icons=true&hide=stars&count_private=true&hide_border=true&bg_color=00000000&title_color=D97757&text_color=8b949e&icon_color=D97757&theme=dark" height="165" alt="serenwoon GitHub 통계">
+<img src="https://github-readme-stats-serenwoon.vercel.app/api?username=serenwoon&show_icons=true&hide=stars&hide_rank=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000&title_color=D97757&text_color=8b949e&icon_color=D97757&theme=dark" height="165" alt="serenwoon GitHub 통계">
 <img src="https://github-readme-stats-serenwoon.vercel.app/api/top-langs/?username=serenwoon&layout=compact&langs_count=6&count_private=true&hide_border=true&bg_color=00000000&title_color=D97757&text_color=8b949e&icon_color=D97757&theme=dark" height="165" alt="많이 쓴 언어">
 
 <img src="https://streak-stats.demolab.com/?user=serenwoon&hide_border=true&background=00000000&stroke=8b949e&ring=D97757&fire=D97757&currStreakLabel=D97757&sideLabels=8b949e&dates=8b949e&currStreakNum=8b949e&sideNums=8b949e" height="165" alt="연속 커밋 기록">
 
 </div>
+
+| 프로젝트 저장소 | 파이썬 | 테스트 | 테스트를 둔 저장소 |
+|:---:|:---:|:---:|:---:|
+| 13개 · 공개 10 | 21,257줄 | 826개 | 13개 중 **9개** |
+
+<sub>2026-08-25 직접 센 값입니다. `find . -name '*.py' | xargs cat | wc -l` · `grep -rhoE '^\s*def test_' | wc -l`.<br>나머지 네 개에는 테스트가 없습니다.</sub>
 
 ## 📦 만든 것
 
@@ -146,6 +152,6 @@ flowchart LR
 
 <a href="mailto:wjddns5161@gmail.com"><img src="https://img.shields.io/badge/wjddns5161@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="이메일"></a>
 
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:5A31F4,100:D97757&height=120&section=footer)
+![footer](https://capsule-render.vercel.app/api?type=wave&color=0:5A31F4,100:D97757&height=120&section=footer)
 
 </div>

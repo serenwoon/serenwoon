@@ -7,7 +7,7 @@ I build agent harnesses for document-heavy work
 
 ### I kill more projects than I ship.
 
-<sub>Six of the last eight died in the measurement, before a line of code.<br>One of them when a single grep showed 299 of 300 cases were already covered.</sub>
+<sub>Six of the last eight ended before a line of code. Five were killed by the measurement itself.<br>One of them when a single grep showed 299 of 300 cases were already covered.</sub>
 
 
 
@@ -68,9 +68,9 @@ flowchart LR
 
 | 프로젝트 저장소 | 파이썬 | 테스트 | 테스트를 둔 저장소 |
 |:---:|:---:|:---:|:---:|
-| 13개 · 공개 10 | 21,257줄 | 826개 | 13개 중 **9개** |
+| 13개 · 공개 10 | 15,972줄 | 616개 | 13개 중 **9개** |
 
-<sub>2026-08-25 직접 센 값입니다. `find . -name '*.py' | xargs cat | wc -l` · `grep -rhoE '^\s*def test_' | wc -l`.<br>나머지 네 개에는 테스트가 없습니다.</sub>
+<sub>2026-08-26 직접 센 값입니다. `find . -name '*.py' -not -path '*/.claude/*' -not -path '*/runs/*' | xargs cat | wc -l` · `grep -rhoE '^\s*def test_' | wc -l`.<br>하루 전에는 두 경로를 안 빼고 세서 21,257줄·826개로 적었습니다. 워크트리 사본이 한 저장소를 세 번 세고 `runs/` 아래에 딴 저장소 코드가 들어 있었습니다. 나머지 네 개에는 테스트가 없습니다.</sub>
 
 ## 📦 만든 것
 
@@ -125,7 +125,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    N["📢 나라장터<br/>2주에 공고 5,000건"] --> S
+    N["📢 나라장터<br/>공고 원문"] --> S
     C["🏢 회사 서류<br/>등록증 · 실적"] --> S
     S["Upstage Studio<br/>Parse → Classify → Extract<br/>HWP 77쪽 그대로"] --> J
     J["Solar Pro<br/>자격 · 계획 · 제출 판정"] --> G
@@ -145,7 +145,7 @@ flowchart LR
 
 지켜지지 않은 자리도 그대로 둡니다. 저 헤드라인 "127건 중 3건"은 픽스처에 박힌 상수(`screening.demo.json`)라서 출처가 없고, 그건 제가 쓴 "출처 없는 숫자 금지"에 정면으로 걸립니다. 대회 중에 걸린 걸 적어만 두고 못 고쳤습니다.
 
-반대로 간 자리도 있습니다. 목업의 드롭존은 다섯 형식을 약속하는데, 코드는 그 약속을 되풀이하지 않고 허용 목록에서 문구를 만들어 "PDF · HWP・HWPX・JPG・PNG는 준비 중"을 띄웁니다.
+반대로 간 자리도 있습니다. 목업의 드롭존은 다섯 형식을 약속하는데, 코드는 그 약속을 되풀이하지 않고 허용 목록에서 문구를 만들어 "PDF  ·  HWP・HWPX・JPG・JPEG・PNG는 준비 중"을 띄웁니다.
 
 ---
 

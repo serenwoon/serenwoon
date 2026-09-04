@@ -81,6 +81,7 @@ flowchart LR
 | [wikilink-audit](https://github.com/serenwoon/wikilink-audit) | 볼트의 깨진 링크 | 정밀도 **0.19 → 1.00 → 0.980** |
 | [extraction-benchmark](https://github.com/serenwoon/extraction-benchmark) | 사람 대 파이프라인 | 60초 → 8.6초, **단서는 양쪽 다 놓침** |
 | [hiring-traps](https://github.com/serenwoon/hiring-traps) | Upstage Studio를 재본 기록 | 노드 **14종 중 4종만 쓰인다** |
+| [quote-review](https://github.com/serenwoon/quote-review) | hiring-traps의 인용 793칸을 사람이 보는 화면 · [배포](https://serenwoon.github.io/quote-review/) | 무작위 스무 칸 중 **넷이 격자와 갈림**, 둘은 격자가 못 보는 종류 |
 
 <sub>👉 전부 실패를 지우지 않고 README에 남겨뒀습니다. 숫자가 나빠진 것도요.</sub>
 

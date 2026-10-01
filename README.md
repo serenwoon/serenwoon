@@ -88,45 +88,23 @@ flowchart LR
 
 ---
 
-## 🏆 Solar for Bid — JunctionX Korea 2026
+## Solar for Bid — JunctionX Korea 2026
 
-[**Team soft icecream**](https://github.com/Yonghyun-Lee-Ryan/JunctionX-Korea-Soft-Icecream) · Upstage 트랙 · 기획과 AI 파이프라인 담당 (팀 80커밋 중 48)
+4인 팀 · Upstage 트랙 · 기획과 AI 파이프라인 담당
 
-나라장터 공고를 읽어 입찰 가능한 것만 추리고, 요구사항 체크리스트 · WBS · 임계경로 · 제출물 목록까지 냅니다.
+회사 서류를 한 번 올려 두면, 고른 입찰 공고마다 참가 자격 판정과 요구사항 체크리스트 · WBS · 임계경로 · 제출물 목록을 근거 쪽과 함께 냅니다.
 
 ![Upstage](https://img.shields.io/badge/Upstage_Studio-5A31F4?style=flat-square&logoColor=white)
 ![Solar](https://img.shields.io/badge/Solar_Pro-5A31F4?style=flat-square&logoColor=white)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
 ![Node](https://img.shields.io/badge/Express-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![tests](https://img.shields.io/badge/tests-158%20%2B%20104-2ea44f?style=flat-square)
 
-<img src="assets/solar-for-bid-discovery.png" alt="공고 탐색 화면. 127건 중 3건을 추천하고, 제외한 124건을 이유와 근거 쪽과 함께 펼쳐 보여준다." width="100%">
-
-<sub>추천 3건 옆에 뺀 124건의 이유가 근거 쪽과 함께 붙어 있습니다. 회사와 공고 판정은 데모용 가상 데이터입니다.<br>화면 디자인은 팀 디자이너 Yejin Joo, 화면에 박힌 판정 규칙과 데모 데이터는 제 기획 문서에서 왔습니다.</sub>
-
-<details>
-<summary>화면 세 장 더 — 회사 카드 · WBS와 임계경로 · 제출 준비</summary>
-
-<br>
-
-<img src="assets/solar-for-bid-company-card.png" alt="회사 카드 화면. 값마다 출처 파일이 붙고, 읽지 못한 두 칸은 미확인으로 남아 직접 입력을 기다린다." width="100%">
-
-읽지 못한 칸은 0으로 채우지 않고 미확인으로 남긴 뒤 사람이 넣습니다.
-
-<img src="assets/solar-for-bid-wbs.png" alt="WBS와 임계경로 화면. 기간이 문서에 없으면 미 명시로 표기하고, 원가는 M/M 추천값까지만 낸다." width="100%">
-
-기간이 문서에 없으면 비워두지 않고 "미 명시"로 적습니다. 원가는 M/M까지만 내고 투찰가는 만들지 않습니다.
-
-<img src="assets/solar-for-bid-submission.png" alt="제출 준비 화면. 부수와 유효기간, 보완 리드타임, 금지 표현 검사 결과를 쪽수와 함께 보여준다." width="100%">
-
-부수 · 유효기간 · 보완 리드타임, 그리고 금지 표현 검사입니다. 인편 제출과 분량 상한 같은 제약도 공고문 쪽수를 달고 옵니다.
-
-</details>
+읽지 못한 칸은 0으로 채우지 않고 미확인으로 남긴 뒤 사람이 넣습니다. 기간이 문서에 없으면 비워두지 않고 "미 명시"로 적습니다. 원가는 M/M까지만 내고 투찰가는 만들지 않습니다.
 
 ```mermaid
 flowchart LR
-    N["📢 나라장터<br/>공고 원문"] --> S
+    N["📢 입찰 공고<br/>원문"] --> S
     C["🏢 회사 서류<br/>등록증 · 실적"] --> S
     S["Upstage Studio<br/>Parse → Classify → Extract<br/>HWP 77쪽 그대로"] --> J
     J["Solar Pro<br/>자격 · 계획 · 제출 판정"] --> G
@@ -135,18 +113,14 @@ flowchart LR
     G2 --> K
 ```
 
-한 건에 Studio 잡 6회 · Solar 6회. 콜드런 10분 22초, 캐시 4분 11초입니다.
+한 건에 Studio 잡 6회 · Solar 6회. 캐시를 쓰면 한 건에 약 4분이 걸렸습니다.
 
-> 입찰은 서류 한 장이 빠지면 그 자리에서 실격이라 **"아마 맞을 겁니다"는 값이 0**입니다.
+> 입찰은 서류 한 장이 빠져도 탈락할 수 있어서 **"아마 맞을 겁니다"는 값이 0**입니다.
 > 그래서 판정마다 근거 문서와 쪽을 달게 했고, 못 읽은 칸은 0으로 채우지 않게 했습니다.
 
-모델이 금지 표현 0곳이라고 한 원고를 백엔드가 쪽 단위로 다시 훑으니 3곳이 나왔습니다. 판정은 전부 두 번 셉니다.
+피해야 할 표현 세 곳을 일부러 넣은 가상 원고를 모델은 0곳이라고 돌려줬고, 백엔드에 쪽 단위 검사를 더하자 세 곳이 모두 잡혔습니다. 판정은 전부 두 번 셉니다.
 
 화면에 박힌 규칙은 제가 쓴 기획 문서에서 그대로 왔습니다. 모든 판정에 근거 페이지를 붙인다, 못 읽은 칸은 미확인으로 남긴다, 투찰가는 만들지 않는다.
-
-지켜지지 않은 자리도 그대로 둡니다. 저 헤드라인 "127건 중 3건"은 픽스처에 박힌 상수(`screening.demo.json`)라서 출처가 없고, 그건 제가 쓴 "출처 없는 숫자 금지"에 정면으로 걸립니다. 대회 중에 걸린 걸 적어만 두고 못 고쳤습니다.
-
-반대로 간 자리도 있습니다. 목업의 드롭존은 다섯 형식을 약속하는데, 코드는 그 약속을 되풀이하지 않고 허용 목록에서 문구를 만들어 "PDF  ·  HWP・HWPX・JPG・JPEG・PNG는 준비 중"을 띄웁니다.
 
 ---
 

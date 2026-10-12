@@ -5,9 +5,6 @@
 
 ---
 
-### I kill more projects than I ship.
-
-<sub>Of eight pipeline runs in August 2026, one shipped. Six ended before a line of code, five of them at the judgment gate.<br>One of those five ended when a count showed that a one-line grep already covered 299 of 300 tagged notes.</sub>
 
 <p>
 <picture>

@@ -1,8 +1,5 @@
 [![Portfolio — serenwoon.github.io/portfolio](https://img.shields.io/badge/Portfolio-serenwoon.github.io%2Fportfolio-2E2E2E?style=for-the-badge&labelColor=161616)](https://serenwoon.github.io/portfolio/)
 
-I build agent harnesses for document-heavy work and measure whether they actually hold.
-
-문서를 다루는 일을 에이전트로 돌리고 그 결과가 정말 맞는지 재는 하네스를 만듭니다. 결과를 내기 전에 맞고 틀림을 가릴 방법부터 마련합니다. 코드는 주로 Claude Code가 쓰고 저는 무엇을 잴지 정한 다음 나온 결과를 다시 셉니다.
 
 화면과 그림을 붙인 열다섯 장짜리 포트폴리오는 [**serenwoon.github.io/portfolio**](https://serenwoon.github.io/portfolio/)에 있습니다. 바로 열어 볼 수 있는 것은 [quote-review](https://serenwoon.github.io/quote-review/), [g2b-daily](https://serenwoon.github.io/g2b-daily/), [star-voyage](https://star-voyage-sooty.vercel.app), [star-cards](https://star-cards-tau.vercel.app), [다시, 한 걸음](https://one-step-beta.vercel.app) 다섯입니다.
 

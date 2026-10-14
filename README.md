@@ -3,17 +3,37 @@
 
 화면과 그림을 붙인 열여덟 장짜리 포트폴리오는 [**serenwoon.github.io/portfolio**](https://serenwoon.github.io/portfolio/)에 있습니다. 바로 열어 볼 수 있는 것은 [quote-review](https://serenwoon.github.io/quote-review/), [g2b-daily](https://serenwoon.github.io/g2b-daily/), [star-voyage](https://star-voyage-sooty.vercel.app), [star-cards](https://star-cards-tau.vercel.app), [다시, 한 걸음](https://one-step-beta.vercel.app), [야구 커리어 게임](https://baseball-career-sim.vercel.app) 여섯입니다.
 
-## PMS <sub>프로젝트 관리 시스템</sub>
+## Featured <sub>대표작</sub>
+
+### PMS <sub>프로젝트 관리 시스템</sub>
 
 <a href="https://serenwoon.github.io/portfolio/#h-pms"><img src="assets/bw-pms-dashboard.png" alt="PMS v0.40의 대시보드입니다. 왼쪽 메뉴는 잘라 냈습니다. 가상 예시 프로젝트의 공식 공정진척(계획 64.4%, 실적 50.6%, 계획 대비 -13.9%p)과 개발진척(전체 프로그램 20본, 개발완료 30%, 지연 2본), 내 진행 업무, 일정과 마일스톤이 보입니다." width="100%"></a>
 
 「PMS」는 여러 조직이 계정과 권한을 나눠 함께 쓰도록 만든 프로젝트 관리 웹 시스템입니다. 인터넷 연결 없이 Node.js만으로 띄우는 것을 조건으로 에이전트와 만들고 있습니다.
 
-일정(WBS와 간트)과 진척, 요구사항, 산출물, 이슈와 위험, 테스트와 결함, 게시판과 채팅을 한 곳에서 다룹니다. 코드는 Codex와 Claude Code가 썼고 저는 만들 것을 요청하고 갈림길에서 골랐습니다.
+일정(WBS와 간트)과 진척, 요구사항, 산출물, 이슈와 위험, 테스트와 결함, 게시판과 채팅을 한 곳에서 다룹니다. 아키텍처는 제가 설계했고 개발은 Codex와 Claude Code가 했습니다.
 
 판을 낼 때마다 자동 검사를 다시 돌립니다. 몇 판은 고친 범위만 돌렸습니다. 전체 검사는 v0.7의 57건에서 v0.40의 1,217건이 됐습니다. 그 사이 두 번은 Claude에게 평가를 따로 맡겼고, 나온 결함은 일부를 빼고 뒤 판에서 고쳤습니다.
 
 <sub>그림은 v0.40의 대시보드이고 가상 예시 프로젝트의 자료입니다. 2026.10.13에 캡처했고, 왼쪽 메뉴를 잘라 내고 흑백으로 바꿔 실었습니다. 저장소는 비공개입니다. 다른 화면과 검사 기록, 평가는 포트폴리오의 PMS 세 장에 있습니다.</sub>
+
+### quote-review <sub>인용 검토 화면</sub>
+
+<a href="https://serenwoon.github.io/quote-review/"><img src="assets/bw-quote-review.png" alt="quote-review 화면입니다. 위에 인용 793칸의 자리 분포와 대조 격자, 사람 판정 수가 있고, 아래에 문서 20건 목록과 인용 표가 있습니다." width="100%"></a>
+
+[quote-review](https://github.com/serenwoon/quote-review) · [화면 열기](https://serenwoon.github.io/quote-review/)<br>
+인용 793칸이 원본 PDF에 실제로 있는지 사람이 한 칸씩 확인하는 화면입니다. 인용은 문서 AI가 공공기관 채용공고에서 뽑았습니다. 화면은 인용마다 PDF에서 읽은 글자와 기계로 맞춰 본 결과를 여덟 칸 격자로 보여 줍니다. 무작위 스무 칸 중 넷이 격자와 어긋났는데 그중 둘은 격자가 잡을 수 없는 종류였습니다. 스무 칸은 표본일 뿐이고 793칸의 사람 판정은 아직 0입니다.
+
+아래 셋은 같은 코퍼스에서 먼저 잰 것입니다.
+
+[hiring-traps](https://github.com/serenwoon/hiring-traps)<br>
+공공기관 채용공고 20건으로 Upstage Studio를 시험해 봤습니다. 제 에이전트 19개는 노드 14종 가운데 4종을 썼습니다. 같은 문서를 두 번 넣었더니 값이 달라졌습니다.
+
+[pdf-read-order](https://github.com/serenwoon/pdf-read-order)<br>
+같은 PDF를 읽기 순서만 바꿔 읽었습니다. 채용공고 104건 중 94건(90.4%)에서 글자는 같은데 순서만 달라졌습니다. 처음엔 121건으로 발표했지만 사본 17건이 섞여 있어 바로잡았습니다.
+
+[pdf-space-guess](https://github.com/serenwoon/pdf-space-guess)<br>
+PDF에서 0.25em 이상 벌어진 자리에 공백이 안 들어가는 비율은 Type 3 글꼴이 79.0%, Type 0이 1.5%입니다. 재는 단위를 잘못 잡아 나온 99.9%를 첫 발표 뒤에 고쳤습니다.
 
 ---
 
@@ -39,24 +59,6 @@
 ![Node.js](https://img.shields.io/badge/Node.js-2E2E2E?style=flat-square&logo=nodedotjs&logoColor=F4F4F4)
 ![Next.js](https://img.shields.io/badge/Next.js-2E2E2E?style=flat-square&logo=nextdotjs&logoColor=F4F4F4)
 ![SQLite](https://img.shields.io/badge/SQLite-2E2E2E?style=flat-square&logo=sqlite&logoColor=F4F4F4)
-
-## Featured <sub>대표작</sub>
-
-<a href="https://serenwoon.github.io/quote-review/"><img src="assets/bw-quote-review.png" alt="quote-review 화면입니다. 위에 인용 793칸의 자리 분포와 대조 격자, 사람 판정 수가 있고, 아래에 문서 20건 목록과 인용 표가 있습니다." width="100%"></a>
-
-[quote-review](https://github.com/serenwoon/quote-review) · [화면 열기](https://serenwoon.github.io/quote-review/)<br>
-인용 793칸이 원본 PDF에 실제로 있는지 사람이 한 칸씩 확인하는 화면입니다. 인용은 문서 AI가 공공기관 채용공고에서 뽑았습니다. 화면은 인용마다 PDF에서 읽은 글자와 기계로 맞춰 본 결과를 여덟 칸 격자로 보여 줍니다. 무작위 스무 칸 중 넷이 격자와 어긋났는데 그중 둘은 격자가 잡을 수 없는 종류였습니다. 스무 칸은 표본일 뿐이고 793칸의 사람 판정은 아직 0입니다.
-
-아래 셋은 같은 코퍼스에서 먼저 잰 것입니다.
-
-[hiring-traps](https://github.com/serenwoon/hiring-traps)<br>
-공공기관 채용공고 20건으로 Upstage Studio를 시험해 봤습니다. 제 에이전트 19개는 노드 14종 가운데 4종을 썼습니다. 같은 문서를 두 번 넣었더니 값이 달라졌습니다.
-
-[pdf-read-order](https://github.com/serenwoon/pdf-read-order)<br>
-같은 PDF를 읽기 순서만 바꿔 읽었습니다. 채용공고 104건 중 94건(90.4%)에서 글자는 같은데 순서만 달라졌습니다. 처음엔 121건으로 발표했지만 사본 17건이 섞여 있어 바로잡았습니다.
-
-[pdf-space-guess](https://github.com/serenwoon/pdf-space-guess)<br>
-PDF에서 0.25em 이상 벌어진 자리에 공백이 안 들어가는 비율은 Type 3 글꼴이 79.0%, Type 0이 1.5%입니다. 재는 단위를 잘못 잡아 나온 99.9%를 첫 발표 뒤에 고쳤습니다.
 
 ## Harnesses <sub>검증 하네스</sub>
 
@@ -122,7 +124,7 @@ MABC 결선작 「다시, 한 걸음」과 그 고도화 판입니다. 청년정
 
 숫자는 시뮬레이션으로 잽니다. 10개 세계를 5년씩 돌려 타율, 출루율, 장타율, 경기당 득점, 평균자책점 같은 지표가 정해 둔 범위를 벗어나면 검사가 실패합니다. 한 세계를 30년 동안 돌려 세대교체 뒤에도 리그가 안정적인지도 확인합니다.
 
-코드는 Claude Code와 Codex가 썼고, 저는 무엇을 만들지 정하고 직접 해 보며 고칠 것을 골랐습니다. 게임 이름은 아직 정하지 않아 작업명으로 부릅니다.
+게임 기획은 제가 했고 개발은 Claude Code와 Codex가 했습니다. 게임 이름은 아직 정하지 않아 작업명으로 부릅니다.
 
 <sub>배포판을 2026.10.14에 로그인 없이 새로 시작해 캡처했습니다. 왼쪽부터 첫 화면, 후보 카드 다섯 장, 고3 봄의 사건, 지명의 밤입니다. 선수와 구단 이름은 모두 가상이고 그림은 흑백으로 바꿔 실었습니다. 저장소는 비공개입니다.</sub>
 

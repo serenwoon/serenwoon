@@ -1,7 +1,19 @@
 [![Portfolio — serenwoon.github.io/portfolio](https://img.shields.io/badge/Portfolio-serenwoon.github.io%2Fportfolio-2E2E2E?style=for-the-badge&labelColor=161616)](https://serenwoon.github.io/portfolio/)
 
 
-화면과 그림을 붙인 열다섯 장짜리 포트폴리오는 [**serenwoon.github.io/portfolio**](https://serenwoon.github.io/portfolio/)에 있습니다. 바로 열어 볼 수 있는 것은 [quote-review](https://serenwoon.github.io/quote-review/), [g2b-daily](https://serenwoon.github.io/g2b-daily/), [star-voyage](https://star-voyage-sooty.vercel.app), [star-cards](https://star-cards-tau.vercel.app), [다시, 한 걸음](https://one-step-beta.vercel.app) 다섯입니다.
+화면과 그림을 붙인 열여덟 장짜리 포트폴리오는 [**serenwoon.github.io/portfolio**](https://serenwoon.github.io/portfolio/)에 있습니다. 바로 열어 볼 수 있는 것은 [quote-review](https://serenwoon.github.io/quote-review/), [g2b-daily](https://serenwoon.github.io/g2b-daily/), [star-voyage](https://star-voyage-sooty.vercel.app), [star-cards](https://star-cards-tau.vercel.app), [다시, 한 걸음](https://one-step-beta.vercel.app), [야구 커리어 게임](https://baseball-career-sim.vercel.app) 여섯입니다.
+
+## PMS <sub>프로젝트 관리 시스템</sub>
+
+<a href="https://serenwoon.github.io/portfolio/#h-pms"><img src="assets/bw-pms-dashboard.png" alt="PMS v0.40의 대시보드입니다. 왼쪽 메뉴는 잘라 냈습니다. 가상 예시 프로젝트의 공식 공정진척(계획 64.4%, 실적 50.6%, 계획 대비 -13.9%p)과 개발진척(전체 프로그램 20본, 개발완료 30%, 지연 2본), 내 진행 업무, 일정과 마일스톤이 보입니다." width="100%"></a>
+
+「PMS」는 여러 조직이 계정과 권한을 나눠 함께 쓰도록 만든 프로젝트 관리 웹 시스템입니다. 인터넷 연결 없이 Node.js만으로 띄우는 것을 조건으로 에이전트와 만들고 있습니다.
+
+일정(WBS와 간트)과 진척, 요구사항, 산출물, 이슈와 위험, 테스트와 결함, 게시판과 채팅을 한 곳에서 다룹니다. 코드는 Codex와 Claude Code가 썼고 저는 만들 것을 요청하고 갈림길에서 골랐습니다.
+
+판을 낼 때마다 자동 검사를 다시 돌립니다. 몇 판은 고친 범위만 돌렸습니다. 전체 검사는 v0.7의 57건에서 v0.40의 1,217건이 됐습니다. 그 사이 두 번은 Claude에게 평가를 따로 맡겼고, 나온 결함은 일부를 빼고 뒤 판에서 고쳤습니다.
+
+<sub>그림은 v0.40의 대시보드이고 가상 예시 프로젝트의 자료입니다. 2026.10.13에 캡처했고, 왼쪽 메뉴를 잘라 내고 흑백으로 바꿔 실었습니다. 저장소는 비공개입니다. 다른 화면과 검사 기록, 평가는 포트폴리오의 PMS 세 장에 있습니다.</sub>
 
 ---
 
@@ -96,11 +108,23 @@ PDF에서 0.25em 이상 벌어진 자리에 공백이 안 들어가는 비율은
 `wbs-weekly`<br>
 엑셀 WBS 진척관리를 웹으로 옮겼습니다. 주차 스냅샷을 쌓아 지난주 대비 변화를 먼저 보여 줍니다.
 
-`pms`<br>
-폐쇄망 운영을 위한 프로젝트 관리 시스템입니다. 계정·권한, 대시보드, 채팅·게시판, CSV·XLSX WBS 분석을 담았습니다. 코드 작성, 검사 실행, 패키징과 배포는 Codex가 했고, 저는 만들 것을 요청하고 갈림길에서 골랐습니다. 검사 기록은 [포트폴리오의 PMS 장](https://serenwoon.github.io/portfolio/#h-pms)에 있습니다.
-
 `policy` · `one-step-apply`<br>
 MABC 결선작 「다시, 한 걸음」과 그 고도화 판입니다. 청년정책 탐색과 필요서류·신청 준비를 돕습니다.
+
+## 야구 커리어 게임 <sub>브라우저 게임</sub>
+
+<a href="https://baseball-career-sim.vercel.app"><img src="assets/bw-game-phones.png" alt="야구 커리어 게임의 화면 네 장입니다. 야구 커리어 게임의 첫 화면입니다. 「고3부터 은퇴까지, 한 달씩 쌓는 커리어」 아래에 구글 계정으로 로그인 단추, 세계와 새 선수 시작, 도감(겪은 사건 0 / 1500 · 획득한 특성 0 / 300 · 칭호 0 / 41)이 있습니다. 선수 만들기의 후보 카드 다섯 장 화면입니다. 재능 등급 B, D, A, B, A 카드 가운데 한 장을 고르면 가상 선수 한지후의 직구, 스플리터, 싱커, 제구, 커맨드 눈금과 스카우트 메모가 보이고, 아래에 다시 뽑기와 이 선수로 시작 단추가 있습니다. 고3 봄의 사건 「저울의 작은 떨림」 화면입니다. 책상 위 저울을 그린 펜 그림과 짧은 이야기 아래에 선택지 셋이 있고, 선택지마다 잘 풀릴 확률과 오르내리는 능력치가 적혀 있습니다. 신인 드래프트 「지명의 밤」 화면입니다. 1라운드 전체 8순위로 가상 구단 대전 코메츠가 한지후를 지명했다는 알림과 야구장을 바라보는 선수 그림, 앞서 불린 선수 목록이 있습니다." width="100%"></a>
+
+[게임 열기](https://baseball-career-sim.vercel.app)<br>
+고3부터 은퇴까지 야구 선수 한 명의 삶을 한 달씩 이어가는 브라우저 게임입니다. 훈련과 경기뿐 아니라 계약, 부상, 인간관계, 생활 속 선택이 커리어를 만듭니다.
+
+플레이할 수 있는 사건 1,500개, 공개 특성 300개, 칭호 41개가 들어 있습니다. 국내 리그는 가상의 10개 구단이 팀당 144경기와 포스트시즌을 치르고, 드래프트에서는 후보 176명 가운데 110명을 11라운드에 걸쳐 지명합니다.
+
+숫자는 시뮬레이션으로 잽니다. 10개 세계를 5년씩 돌려 타율, 출루율, 장타율, 경기당 득점, 평균자책점 같은 지표가 정해 둔 범위를 벗어나면 검사가 실패합니다. 한 세계를 30년 동안 돌려 세대교체 뒤에도 리그가 안정적인지도 확인합니다.
+
+코드는 Claude Code와 Codex가 썼고, 저는 무엇을 만들지 정하고 직접 해 보며 고칠 것을 골랐습니다. 게임 이름은 아직 정하지 않아 작업명으로 부릅니다.
+
+<sub>배포판을 2026.10.14에 로그인 없이 새로 시작해 캡처했습니다. 왼쪽부터 첫 화면, 후보 카드 다섯 장, 고3 봄의 사건, 지명의 밤입니다. 선수와 구단 이름은 모두 가상이고 그림은 흑백으로 바꿔 실었습니다. 저장소는 비공개입니다.</sub>
 
 ## Experience <sub>대회</sub>
 
